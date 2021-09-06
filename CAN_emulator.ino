@@ -39,7 +39,7 @@ canMsg2.data[5] = 0x00;
 canMsg2.data[6] = 0x00;
 canMsg2.data[7] = 0x00;
 
-canMsg3.can_id =0x18FDB33D | CAN_EFF_FLAG;  // AT1OG2_X_ACM: 8 delay 273, cycle 500
+canMsg3.can_id =0x18FDB33D | CAN_EFF_FLAG;
 canMsg3.can_dlc = 8;
 canMsg3.data[0] = 0xFF;
 canMsg3.data[1] = 0xFF;
@@ -83,7 +83,7 @@ canMsg6.data[5] = 0x00;
 canMsg6.data[6] = 0x09; 
 canMsg6.data[7] = 0x87;
 
-canMsg7.can_id =0x18EBFF3D | CAN_EFF_FLAG;  //Transfer cycle 1000
+canMsg7.can_id =0x18EBFF3D | CAN_EFF_FLAG;  //cycle 1000
 canMsg7.can_dlc = 8;
 canMsg7.data[0] = 0x02;
 canMsg7.data[1] = 0x0E;
