@@ -1,5 +1,3 @@
-//ACM CAN EMULATOR_ ACM pin 2L 6H 500MS
-//BB2
 #include <SPI.h>
 #include <mcp2515.h>
 
@@ -47,14 +45,14 @@ MCP2515 mcp2515(10);
 
 
 void setup() {
-canMsg1.can_id =0x1CFF903D | CAN_EFF_FLAG; // AnmMsg_ACM_Backbone2 CYCLE 100
+canMsg1.can_id =0x1CFF903D | CAN_EFF_FLAG;
 canMsg1.can_dlc = 4;
 canMsg1.data[0] = 0x00;
 canMsg1.data[1] = 0x00;
 canMsg1.data[2] = 0x00;
 canMsg1.data[3] = 0x00;
 
-canMsg2.can_id =0x10FF2E3D | CAN_EFF_FLAG; //CEA2P_BB2_M2_ACM: 8 CYCLE 100
+canMsg2.can_id =0x10FF2E3D | CAN_EFF_FLAG;
 canMsg2.can_dlc = 8;
 canMsg2.data[0] = 0x00;
 canMsg2.data[1] = 0x00;
@@ -65,7 +63,7 @@ canMsg2.data[5] = 0xFF;
 canMsg2.data[6] = 0xFF;
 canMsg2.data[7] = 0xFF;
 
-canMsg3.can_id =0x19FF013D | CAN_EFF_FLAG; // ???? CYCLE 1000
+canMsg3.can_id =0x19FF013D | CAN_EFF_FLAG;
 canMsg3.can_dlc = 8;
 canMsg3.data[0] = 0x00;
 canMsg3.data[1] = 0x00;
@@ -76,7 +74,7 @@ canMsg3.data[5] = 0x00;
 canMsg3.data[6] = 0xFF;
 canMsg3.data[7] = 0x01;
 
-canMsg4.can_id =0x18F77E3D | CAN_EFF_FLAG; // CEA2P_BB2_M6_ACM CYCLE 1500
+canMsg4.can_id =0x18F77E3D | CAN_EFF_FLAG;
 canMsg4.can_dlc = 8;
 canMsg4.data[0] = 0x00;
 canMsg4.data[1] = 0xFE;
